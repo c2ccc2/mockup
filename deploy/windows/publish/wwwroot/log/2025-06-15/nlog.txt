@@ -1,0 +1,50 @@
+[2025-06-15 12:56:08]
+ SELECT COUNT(1) FROM `project_base`  WHERE ( `create_by` = 'admin' ) 
+[2025-06-15 12:56:20]
+ SELECT Count(*) FROM `project_user` `r` Left JOIN `sys_user` `u` ON ( `r`.`user_id` = `u`.`user_id` )  Left JOIN `project_base` `p` ON ( `r`.`project_id` = `p`.`project_id` )   WHERE ( `r`.`user_id` = 1 ) 
+[2025-06-15 12:56:20]
+ SELECT  `u`.`nick_name` AS `NickName` , `u`.`user_name` AS `UserName` , `u`.`phonenumber` AS `Phonenumber` , `p`.`project_name` AS `ProjectName` , `r`.`project_id` AS `ProjectId` , `r`.`user_id` AS `UserId` , `r`.`project_id` AS `ProjectUserId`  FROM `project_user` `r` Left JOIN `sys_user` `u` ON ( `r`.`user_id` = `u`.`user_id` )  Left JOIN `project_base` `p` ON ( `r`.`project_id` = `p`.`project_id` )    WHERE ( `r`.`user_id` = 1 )   LIMIT 0,10
+[2025-06-15 12:56:22]
+ SELECT Count(*) FROM `project_user` `r` Left JOIN `sys_user` `u` ON ( `r`.`user_id` = `u`.`user_id` )  Left JOIN `project_base` `p` ON ( `r`.`project_id` = `p`.`project_id` )   WHERE ( `r`.`user_id` = 1 ) 
+[2025-06-15 12:56:22]
+ SELECT  `u`.`nick_name` AS `NickName` , `u`.`user_name` AS `UserName` , `u`.`phonenumber` AS `Phonenumber` , `p`.`project_name` AS `ProjectName` , `r`.`project_id` AS `ProjectId` , `r`.`user_id` AS `UserId` , `r`.`project_id` AS `ProjectUserId`  FROM `project_user` `r` Left JOIN `sys_user` `u` ON ( `r`.`user_id` = `u`.`user_id` )  Left JOIN `project_base` `p` ON ( `r`.`project_id` = `p`.`project_id` )    WHERE ( `r`.`user_id` = 1 )   LIMIT 0,10
+[2025-06-15 12:56:22]
+ SELECT `project_id`,`user_id`,`project_name`,`project_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_base`  WHERE `project_id` = 1   
+[2025-06-15 12:56:23]
+ SELECT COUNT(1) FROM `project_file`  WHERE ( `project_id` = 1 ) 
+[2025-06-15 12:56:23]
+ SELECT `project_file_id`,`project_id`,`file_name`,`project_file_guid`,`file_path`,`version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file`   WHERE ( `project_id` = 1 )   LIMIT 0,10
+[2025-06-15 12:56:24]
+ SELECT Count(*) FROM `project_file_upload_history`  WHERE ( `project_file_id` = 1 ) 
+[2025-06-15 12:56:24]
+ SELECT `history_id`,`project_file_id`,`project_id`,`file_name`,`file_path`,`project_version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file_upload_history`   WHERE ( `project_file_id` = 1 )  ORDER BY `create_time` DESC LIMIT 0,10
+[2025-06-15 12:56:26]
+ DELETE FROM `project_file_upload_history` WHERE `history_id` IN (2) 
+[2025-06-15 12:56:26]
+ SELECT COUNT(1) FROM `project_file`  WHERE ( `project_id` = 1 ) 
+[2025-06-15 12:56:26]
+ SELECT `project_file_id`,`project_id`,`file_name`,`project_file_guid`,`file_path`,`version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file`   WHERE ( `project_id` = 1 )   LIMIT 0,10
+[2025-06-15 12:56:26]
+ SELECT Count(*) FROM `project_file_upload_history`  WHERE ( `project_file_id` = 1 ) 
+[2025-06-15 12:56:26]
+ SELECT `history_id`,`project_file_id`,`project_id`,`file_name`,`file_path`,`project_version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file_upload_history`   WHERE ( `project_file_id` = 1 )  ORDER BY `create_time` DESC LIMIT 0,10
+[2025-06-15 12:56:31]
+ SELECT `project_file_id`,`project_id`,`file_name`,`project_file_guid`,`file_path`,`version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file`  WHERE `project_file_id` = 1   
+[2025-06-15 12:56:31]
+ SELECT `history_id`,`project_file_id`,`project_id`,`file_name`,`file_path`,`project_version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file_upload_history`   WHERE ( `project_file_id` = 1 )  ORDER BY `create_time` DESC LIMIT 0,1
+[2025-06-15 12:56:31]
+ INSERT INTO `project_file_upload_history`  
+           (`project_file_id`,`project_id`,`file_name`,`file_path`,`project_version`,`upload_description`,`create_by`,`create_time`)
+     VALUES
+           (1,1,'file_5845b9404c4c4ac98a0ee89d50bdf61d.zip','upload\projectupload\file_5845b9404c4c4ac98a0ee89d50bdf61d.zip',1,'111','admin',NOW(6)) ;
+[2025-06-15 12:56:31]
+ UPDATE `project_file`  SET
+           `file_name`='file_5845b9404c4c4ac98a0ee89d50bdf61d.zip',`project_file_guid`='a73f6d7ed0ef4242a8787de1ed0ec95f',`file_path`='upload\projectupload\file_5845b9404c4c4ac98a0ee89d50bdf61d.zip',`version`=1,`upload_description`='前端原型',`update_by`='admin',`update_time`=NOW(6)  WHERE `project_file_id`=1
+[2025-06-15 12:56:31]
+ SELECT COUNT(1) FROM `project_file`  WHERE ( `project_id` = 1 ) 
+[2025-06-15 12:56:31]
+ SELECT `project_file_id`,`project_id`,`file_name`,`project_file_guid`,`file_path`,`version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file`   WHERE ( `project_id` = 1 )   LIMIT 0,10
+[2025-06-15 12:56:31]
+ SELECT Count(*) FROM `project_file_upload_history`  WHERE ( `project_file_id` = 1 ) 
+[2025-06-15 12:56:31]
+ SELECT `history_id`,`project_file_id`,`project_id`,`file_name`,`file_path`,`project_version`,`upload_description`,`create_by`,`create_time`,`update_by`,`update_time` FROM `project_file_upload_history`   WHERE ( `project_file_id` = 1 )  ORDER BY `create_time` DESC LIMIT 0,10
