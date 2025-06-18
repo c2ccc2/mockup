@@ -46,6 +46,8 @@ services:
   pmapp:
     image: mcr.microsoft.com/dotnet/aspnet:8.0
     container_name: pmapp
+    security_opt:
+    - seccomp=unconfined
     ports:
       - "5000:5000"
     environment:
