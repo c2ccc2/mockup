@@ -7,8 +7,8 @@
 ## 软件架构
 
 本项目基于前后端分离架构：
-服务端：.net8
-前端管理端： vue3、elementui
+服务端：.net core 8
+前端端： vue3、elementui
 
 | 目录 | 说明 |
 | ---- | ---- |
@@ -36,7 +36,7 @@
 
 ## 部署方式
 
-### 1. 单独部署（仅限 windows）
+### 1. 单独部署
 
 1. 准备 mysql、redis 等环境。
 
@@ -49,6 +49,8 @@
 5. 系统即开始运行
 
 6. 登录使用
+
+linux下部署请参考     [linux下部署](https://www.zhiyupm.com/wiki/single)
 
 ### 2. docker 方式部署（全平台）
 
@@ -73,6 +75,7 @@
 
 后续版本规划，交流咨询请加 QQ 群:7834330。
 
+更多信息请查看 [官网](https://www.zhiyupm.com)
 ## 感谢
 
 感谢 ruoyi-vue-admin、ele-admin-ui、 ruoyi.net 等。

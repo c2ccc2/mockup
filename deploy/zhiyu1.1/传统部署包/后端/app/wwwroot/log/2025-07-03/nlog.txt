@@ -1,0 +1,6 @@
+[2025-07-03 14:32:45]
+ SELECT `file_id`,`RealName`,`FileType`,`FileName`,`FileUrl`,`StorePath`,`FileSize`,`FileExt`,`AccessUrl`,`ClassifyType`,`create_by`,`create_time`,`update_by`,`update_time` FROM `sys_file` `u`  WHERE (EXISTS ( SELECT * FROM `file_ref_info` `p`  WHERE (( `ref_table_id` = 1 ) AND ( `u`.`file_id` = `file_id` )) )) 
+[2025-07-03 14:32:55]
+ SELECT `file_id`,`RealName`,`FileType`,`FileName`,`FileUrl`,`StorePath`,`FileSize`,`FileExt`,`AccessUrl`,`ClassifyType`,`create_by`,`create_time`,`update_by`,`update_time` FROM `sys_file` `u`  WHERE (EXISTS ( SELECT * FROM `file_ref_info` `p`  WHERE (( `ref_table_id` = 1 ) AND ( `u`.`file_id` = `file_id` )) )) 
+[2025-07-03 14:33:56]
+ SELECT `file_id`,`RealName`,`FileType`,`FileName`,`FileUrl`,`StorePath`,`FileSize`,`FileExt`,`AccessUrl`,`ClassifyType`,`create_by`,`create_time`,`update_by`,`update_time` FROM `sys_file` `u`  WHERE (EXISTS ( SELECT * FROM `file_ref_info` `p`  WHERE (( `ref_table_id` = 1 ) AND ( `u`.`file_id` = `file_id` )) )) 

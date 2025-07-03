@@ -1,0 +1,1872 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RuoYi.System</name>
+    </assembly>
+    <members>
+        <member name="T:RuoYi.System.Controllers.SysConfigController">
+            <summary>
+              参数配置表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.GetSysConfigList(RuoYi.Data.Dtos.SysConfigDto)">
+            <summary>
+              查询参数配置表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.Get(System.Int32)">
+            <summary>
+              获取 参数配置表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.GetConfigKey(System.String)">
+            <summary>
+              根据键名查询参数配置信息
+            </summary>
+            <param name="configKey">参数键名</param>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.Add(RuoYi.Data.Dtos.SysConfigDto)">
+            <summary>
+              新增 参数配置表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.Edit(RuoYi.Data.Dtos.SysConfigDto)">
+            <summary>
+              修改 参数配置表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.Remove(System.String)">
+            <summary>
+              删除 参数配置表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.Export(RuoYi.Data.Dtos.SysConfigDto)">
+            <summary>
+              导出 参数配置表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysConfigController.RefreshCache">
+            <summary>
+              刷新参数缓存
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysDeptController">
+            <summary>
+              部门表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDeptController.GetSysDeptList(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              查询部门表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDeptController.ExcludeChildList(System.Nullable{System.Int64})">
+            <summary>
+              查询部门表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDeptController.Get(System.Int64)">
+            <summary>
+              获取 部门表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDeptController.Add(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              新增 部门表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDeptController.Edit(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              修改 部门表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDeptController.Remove(System.Int64)">
+            <summary>
+              删除 部门表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysDictDataController">
+            <summary>
+              字典数据表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictDataController.GetSysDictDataList(RuoYi.Data.Dtos.SysDictDataDto)">
+            <summary>
+              查询字典数据表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictDataController.Get(System.Int64)">
+            <summary>
+              获取 字典数据表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictDataController.GetListByDictType(System.String)">
+            <summary>
+              根据字典类型查询字典数据信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictDataController.Add(RuoYi.Data.Dtos.SysDictDataDto)">
+            <summary>
+              新增 字典数据表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictDataController.Edit(RuoYi.Data.Dtos.SysDictDataDto)">
+            <summary>
+              修改 字典数据表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictDataController.Remove(System.Int64[])">
+            <summary>
+              删除 字典数据表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictDataController.Export(RuoYi.Data.Dtos.SysDictDataDto)">
+            <summary>
+              导出 字典数据表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysDictTypeController">
+            <summary>
+              字典类型表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.GetSysDictTypeList(RuoYi.Data.Dtos.SysDictTypeDto)">
+            <summary>
+              查询字典类型表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.Get(System.Nullable{System.Int64})">
+            <summary>
+              获取 字典类型表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.Add(RuoYi.Data.Dtos.SysDictTypeDto)">
+            <summary>
+              新增 字典类型表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.Edit(RuoYi.Data.Dtos.SysDictTypeDto)">
+            <summary>
+              修改 字典类型表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.Remove(System.Int64[])">
+            <summary>
+              删除 字典类型表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.RefreshCache">
+            <summary>
+              刷新字典缓存
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.OptionSelect">
+            <summary>
+              获取字典选择框列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysDictTypeController.Export(RuoYi.Data.Dtos.SysDictTypeDto)">
+            <summary>
+              导出 字典类型表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysMenuController">
+            <summary>
+              菜单权限表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysMenuController.SysMenuListAsync(RuoYi.Data.Dtos.SysMenuDto)">
+            <summary>
+              查询菜单权限表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysMenuController.Get(System.Nullable{System.Int64})">
+            <summary>
+              获取 菜单权限表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysMenuController.Treeselect(RuoYi.Data.Dtos.SysMenuDto)">
+            <summary>
+              获取菜单下拉树列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysMenuController.RoleMenuTreeselectAsync(System.Int64)">
+            <summary>
+              加载对应角色菜单列表树
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysMenuController.Add(RuoYi.Data.Dtos.SysMenuDto)">
+            <summary>
+              新增 菜单权限表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysMenuController.Edit(RuoYi.Data.Dtos.SysMenuDto)">
+            <summary>
+              修改 菜单权限表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysMenuController.Remove(System.Int64)">
+            <summary>
+              删除 菜单权限表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysNoticeController">
+            <summary>
+              通知公告表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysNoticeController.GetSysNoticeList(RuoYi.Data.Dtos.SysNoticeDto)">
+            <summary>
+              查询通知公告表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysNoticeController.Get(System.Int32)">
+            <summary>
+              获取 通知公告表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysNoticeController.Add(RuoYi.Data.Dtos.SysNoticeDto)">
+            <summary>
+              新增 通知公告表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysNoticeController.Edit(RuoYi.Data.Dtos.SysNoticeDto)">
+            <summary>
+              修改 通知公告表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysNoticeController.Remove(System.String)">
+            <summary>
+              删除 通知公告表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysPostController">
+            <summary>
+              岗位信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysPostController.GetSysPostList(RuoYi.Data.Dtos.SysPostDto)">
+            <summary>
+              查询岗位信息表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysPostController.Get(System.Nullable{System.Int64})">
+            <summary>
+              获取 岗位信息表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysPostController.Add(RuoYi.Data.Dtos.SysPostDto)">
+            <summary>
+              新增 岗位信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysPostController.Edit(RuoYi.Data.Dtos.SysPostDto)">
+            <summary>
+              修改 岗位信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysPostController.Remove(System.String)">
+            <summary>
+              删除 岗位信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysPostController.Export(RuoYi.Data.Dtos.SysPostDto)">
+            <summary>
+              导出 岗位信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysPostController.OptionSelect">
+            <summary>
+              获取岗位选择框列表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysProfileController">
+            <summary>
+              个人信息 业务处理
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysProfileController.UpdateProfile(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              修改用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysProfileController.UpdatePwd(System.String,System.String)">
+            <summary>
+              重置密码
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysProfileController.UploadAvatar(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+              头像上传
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysRegisterController">
+            <summary>
+              注册验证
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRegisterController.Register(RuoYi.Data.Models.RegisterBody)">
+            <summary>
+              头像上传
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysRoleController">
+            <summary>
+              角色信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.GetSysRoleList(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              查询角色信息表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.Get(System.Int64)">
+            <summary>
+              获取 角色信息表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.Add(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              新增 角色信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.Edit(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              修改 角色信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.SaveDataScope(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              修改保存数据权限
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.ChangeStatus(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              状态修改
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.Remove(System.String)">
+            <summary>
+              删除 角色信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.Export(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              导出 角色信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.OptionSelect">
+            <summary>
+              获取角色选择框列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.GetAllocatedList(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              查询已分配用户角色列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.GetUnallocatedList(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              查询未分配用户角色列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.CancelAuthUser(RuoYi.Data.Dtos.SysUserRoleDto)">
+            <summary>
+              取消授权用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.CancelAuthUserBath(RuoYi.Data.Dtos.SysUserRoleDto)">
+            <summary>
+              批量取消授权用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.SaveAuthUserAll(RuoYi.Data.Dtos.SysUserRoleDto)">
+            <summary>
+              批量选择用户授权
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysRoleController.GetDeptTree(System.Int64)">
+            <summary>
+              获取对应角色部门树列表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Controllers.SysUserController">
+            <summary>
+              用户信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.GetUserList(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              查询用户信息表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.GetInfo(System.Nullable{System.Int64})">
+            <summary>
+              获取 用户信息表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.Add(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              新增用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.Edit(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              修改用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.Remove(System.String)">
+            <summary>
+              删除用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.ResetPwd(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              重置密码
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.ChangeStatus(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              状态修改
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.GetAuthRole(System.Int64)">
+            <summary>
+              根据用户编号获取授权角色
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.InsertAuthRole(System.Int64,System.String)">
+            <summary>
+              用户授权角色
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.GetDeptTree(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              获取部门树列表
+            </summary>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.Import(Microsoft.AspNetCore.Http.IFormFile,System.Boolean)">
+            <summary>
+              导入 用户信息表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.DownloadImportTemplate">
+            <summary>
+              下载导入模板
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Controllers.SysUserController.Export(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              导出 用户信息表
+            </summary>
+        </member>
+        <member name="F:RuoYi.System.LogAttribute.EXCLUDE_PROPERTIES">
+            排除敏感属性字段
+        </member>
+        <member name="M:RuoYi.System.LogAttribute.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+              监视 Action 执行
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="P:RuoYi.System.LogAttribute.Title">
+            <summary>
+              模块
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.LogAttribute.BusinessType">
+            <summary>
+              功能
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.LogAttribute.OperatorType">
+            <summary>
+              操作人类别
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.LogAttribute.IsSaveRequestData">
+            <summary>
+              是否保存请求的参数
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.LogAttribute.IsSaveResponseData">
+            <summary>
+              是否保存响应的参数
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.LogAttribute.ExcludeParamNames">
+            <summary>
+              排除指定的请求参数
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysConfigRepository">
+            <summary>
+              参数配置表 Repository
+              author ruoyi
+              date   2023-08-21 14:40:22
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysDeptRepository">
+            <summary>
+              部门表 Repository
+              author ruoyi
+              date   2023-09-04 17:49:57
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDeptRepository.GetDeptListByRoleIdAsync(System.Int64,System.Boolean)">
+            <summary>
+              根据角色ID查询部门树信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDeptRepository.CountNormalChildrenDeptByIdAsync(System.Int64)">
+            <summary>
+              根据ID查询所有子部门（正常状态）
+            </summary>
+            <param name="deptId">部门ID</param>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDeptRepository.GetChildrenDeptByIdAsync(System.Int64)">
+            <summary>
+              根据ID查询所有子部门
+            </summary>
+            <param name="deptId">部门ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDeptRepository.UpdateDeptStatusNormalAsync(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+              修改所在部门正常状态
+            </summary>
+            <param name="deptIds">部门ID组</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDeptRepository.HasChildByDeptIdAsync(System.Int64)">
+            <summary>
+              是否存在子节点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDeptRepository.DeleteDeptByIdAsync(System.Int64)">
+            <summary>
+              删除部门管理信息
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysDictDataRepository">
+            <summary>
+              字典数据表 Repository
+              author ruoyi
+              date   2023-09-04 17:49:59
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDictDataRepository.UpdateDictDataTypeAsync(System.String,System.String)">
+            <summary>
+              同步修改字典类型
+            </summary>
+            <param name="oldDictType">旧字典类型</param>
+            <param name="newDictType">新旧字典类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDictDataRepository.CountDictDataByTypeAsync(System.String)">
+            <summary>
+              查询字典数据
+            </summary>
+            <param name="dictType">字典类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysDictTypeRepository">
+            <summary>
+              字典类型表 Repository
+              author ruoyi
+              date   2023-09-04 17:49:59
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysDictTypeRepository.CheckDictTypeUniqueAsync(System.String)">
+            <summary>
+              校验字典类型称是否唯一
+            </summary>
+            <param name="dictType">字典类型</param>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysLogininforRepository">
+            <summary>
+              系统访问记录 Repository
+              author ruoyi
+              date   2023-08-22 10:07:36
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysMenuRepository">
+            <summary>
+              菜单权限表 Repository
+              author ruoyi
+              date   2023-08-21 14:40:23
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysMenuRepository.SelectMenuPermsByUserId(System.Int64)">
+            <summary>
+              根据用户ID查询菜单
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysMenuRepository.SelectMenuPermsByRoleId(System.Int64)">
+            <summary>
+              根据角色ID查询权限
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysMenuRepository.SelectMenuTreeAll">
+            <summary>
+              查询菜单
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysMenuRepository.SelectMenuTreeByUserId(System.Int64)">
+            <summary>
+              根据用户ID查询菜单
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysNoticeRepository">
+            <summary>
+              通知公告表 Repository
+              author ruoyi
+              date   2023-09-04 17:50:00
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysOperLogRepository">
+            <summary>
+              操作日志记录 Repository
+              author ruoyi
+              date   2023-09-28 12:38:39
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysPostRepository">
+            <summary>
+              岗位信息表 Repository
+              author ruoyi
+              date   2023-08-30 13:21:36
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysRoleDeptRepository">
+            <summary>
+              角色和部门关联表 Repository
+              author ruoyi.net
+              date   2023-08-23 09:43:52
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysRoleDeptRepository.DeleteByRoleIdAsync(System.Int64)">
+            <summary>
+              按角色ID删除
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysRoleDeptRepository.DeleteByDeptIdAsync(System.Int64)">
+            <summary>
+              按部门ID删除
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysRoleMenuRepository">
+            <summary>
+              角色和菜单关联表 Repository
+              author ruoyi.net
+              date   2023-08-23 09:43:53
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysRoleMenuRepository.CheckMenuExistRole(System.Int64)">
+            <summary>
+              查询菜单使用数量
+            </summary>
+            <param name="menuId">菜单ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysRoleMenuRepository.DeleteByRoleIdAsync(System.Int64)">
+            <summary>
+              按角色ID删除
+            </summary>
+            <param name="roleId">角色ID</param>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysRoleMenuRepository.DeleteByRoleIdsAsync(System.Collections.Generic.List{System.Int64})">
+            <summary>
+              按角色ID删除
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysRoleRepository">
+            <summary>
+              角色信息表 Repository
+              author ruoyi
+              date   2023-08-21 14:40:22
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysRoleRepository.DeleteByRoleIdsAsync(System.Collections.Generic.List{System.Int64})">
+            <summary>
+              按角色ID删除
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysUserPostRepository">
+            <summary>
+              用户与岗位关联表 Repository
+              author ruoyi.net
+              date   2023-08-23 09:43:50
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserPostRepository.CountUserPostByIdAsync(System.Int64)">
+            <summary>
+              通过岗位ID查询岗位使用数量
+            </summary>
+            <param name="postId">岗位ID</param>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysUserRepository">
+            <summary>
+              用户信息表 Repository
+              author ruoyi
+              date   2023-08-21 14:40:20
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.GetUserDtoAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              查询用户列表 sql, 返回 SysUserDto
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.UpdateUserAvatarAsync(System.String,System.String)">
+            <summary>
+              更新头像
+            </summary>
+            <param name="userName">用户名</param>
+            <param name="avatar">头像地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.UpdateUserLoginInfoAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              更新登录信息: 登录IP/登录时间
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.DeleteUserById(System.Int64)">
+            <summary>
+              通过用户ID删除用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.DeleteUserByIds(System.Collections.Generic.List{System.Int64})">
+            <summary>
+              通过用户ID批量删除用户
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.ResetPasswordAsync(System.String,System.String)">
+            <summary>
+              重置用户密码
+            </summary>
+            <param name="userName">用户名</param>
+            <param name="password">加密后的密码</param>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.CheckDeptExistUserAsync(System.Int64)">
+            <summary>
+              查询部门是否存在用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.UserQueryable(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              查询用户列表 sql, 返回 SysUser
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRepository.UserDtoQueryable(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              查询用户列表 sql, 返回 SysUser
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Repositories.SysUserRoleRepository">
+            <summary>
+              用户和角色关联表 Repository
+              author ruoyi.net
+              date   2023-08-23 09:43:52
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRoleRepository.CountUserRoleByRoleIdAsync(System.Int64)">
+            <summary>
+              按 角色ID 查询数量
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Repositories.SysUserRoleRepository.DeleteUserRoleInfoAsync(System.Int64,System.Int64)">
+            <summary>
+              按用户+角色删除
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.GetServerInfo">
+            <summary>
+              获取服务器信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.CalculateMem(System.UInt64)">
+            <summary>
+              计算内存 , 转换成 G
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.GetStartTime(System.Int64)">
+            <summary>
+              系统启动时间
+            </summary>
+            <param name="tickCount">当前系统已运行的毫秒数</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.GetClrHome">
+            <summary>
+              取 sdk 路径
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.GetRunTime(System.Int64)">
+            <summary>
+              系统运行时间
+            </summary>
+            <param name="tickCount">当前系统已运行的毫秒数</param>
+            <returns>X天X小时X分钟</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.GetRunTime(System.DateTime,System.DateTime)">
+            <summary>
+              系统运行时间
+            </summary>
+            <param name="tickCount">当前系统已运行的毫秒数</param>
+            <returns>X天X小时X分钟</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.ConvertFileSize(System.UInt64)">
+            <summary>
+              字节转换
+            </summary>
+            <param name="size">字节大小</param>
+            <returns>转换后值</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.GetFileSystem(System.Collections.Generic.List{Hardware.Info.Partition})">
+            <summary>
+              取系统文件类型(NTFS/FAT)
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.ServerService.GetDriveFreeSpace(Hardware.Info.Drive)">
+            <summary>
+              取磁盘剩余空间
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysConfigService">
+            <summary>
+              参数配置表 Service
+              author ruoyi
+              date   2023-08-21 14:40:22
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.GetAsync(System.Int32)">
+            <summary>
+              查询 参数配置表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.SelectConfigByKey(System.String)">
+            <summary>
+              根据键名查询参数配置信息
+            </summary>
+            <param name="configKey">参数key</param>
+            <returns>参数键值</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.GetCacheKey(System.String)">
+            <summary>
+              设置cache key
+            </summary>
+            <param name="configKey">configKey 参数键</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.IsCaptchaEnabled">
+            <summary>
+              获取验证码开关
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.InsertConfigAsync(RuoYi.Data.Dtos.SysConfigDto)">
+            <summary>
+              新增参数配置
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.UpdateConfigAsync(RuoYi.Data.Dtos.SysConfigDto)">
+            <summary>
+              修改参数配置
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.DeleteConfigByIdsAsync(System.Int32[])">
+            <summary>
+              批量删除参数信息
+            </summary>
+            <param name="configIds">需要删除的参数ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.ResetConfigCache">
+            <summary>
+              重置参数缓存数据
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.ClearConfigCache">
+            <summary>
+              清空参数缓存数据
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.LoadingConfigCache">
+            <summary>
+              加载参数缓存数据
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysConfigService.CheckConfigKeyUnique(RuoYi.Data.Dtos.SysConfigDto)">
+            <summary>
+              校验参数键名是否唯一
+            </summary>
+            <param name="config">参数配置信息</param>
+        </member>
+        <member name="T:RuoYi.System.Services.SysDeptService">
+            <summary>
+              部门表 Service
+              author ruoyi
+              date   2023-09-04 17:49:57
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.GetAsync(System.Int64)">
+            <summary>
+              查询 部门表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.GetDeptListByRoleIdAsync(System.Int64)">
+            <summary>
+              根据角色ID查询部门树信息
+            </summary>
+            <param name="roleId">角色ID</param>
+            <returns>选中部门列表</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.CountNormalChildrenDeptByIdAsync(System.Int64)">
+            <summary>
+              根据ID查询所有子部门（正常状态）数量
+            </summary>
+            <param name="deptId">部门ID</param>
+            <returns>子部门数</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.CheckDeptNameUniqueAsync(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              校验部门名称是否唯一
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.CheckDeptDataScopeAsync(System.Int64)">
+            <summary>
+              校验部门是否有数据权限
+            </summary>
+            <param name="deptId">部门id</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.InsertDeptAsync(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              新增保存部门信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.UpdateDeptAsync(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              修改保存部门信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.UpdateDeptChildrenAsync(System.Int64,System.String,System.String)">
+            <summary>
+              修改子元素关系
+            </summary>
+            <param name="deptId">被修改的部门ID</param>
+            <param name="newAncestors">新的父ID集合</param>
+            <param name="oldAncestors">旧的父ID集合</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.UpdateParentDeptStatusNormalAsync(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              修改该部门的父级部门状态
+            </summary>
+            <param name="dept">当前部门</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.DeleteDeptByIdAsync(System.Int64)">
+            <summary>
+              删除部门管理信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.GetDeptTreeListAsync(RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              查询部门树结构信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.BuildDeptTreeSelect(System.Collections.Generic.List{RuoYi.Data.Dtos.SysDeptDto})">
+            <summary>
+              构建前端所需要下拉树结构
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.BuildDeptTree(System.Collections.Generic.List{RuoYi.Data.Dtos.SysDeptDto})">
+            <summary>
+              构建前端所需要树结构
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.RecursionFn(System.Collections.Generic.List{RuoYi.Data.Dtos.SysDeptDto},RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              递归列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.GetChildList(System.Collections.Generic.List{RuoYi.Data.Dtos.SysDeptDto},RuoYi.Data.Dtos.SysDeptDto)">
+            <summary>
+              得到子节点列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.HasChildByDeptIdAsync(System.Int64)">
+            <summary>
+              是否存在子节点
+            </summary>
+            <param name="deptId">部门ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDeptService.CheckDeptExistUserAsync(System.Int64)">
+            <summary>
+              查询部门是否存在用户
+            </summary>
+            <param name="deptId">部门ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.System.Services.SysDictDataService">
+            <summary>
+              字典数据表 Service
+              author ruoyi
+              date   2023-09-04 17:49:59
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictDataService.GetAsync(System.Int64)">
+            <summary>
+              查询 字典数据表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictDataService.InsertDictDataAsync(RuoYi.Data.Dtos.SysDictDataDto)">
+            <summary>
+              新增保存字典数据信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictDataService.UpdateDictDataAsync(RuoYi.Data.Dtos.SysDictDataDto)">
+            <summary>
+              修改保存字典数据信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictDataService.DeleteDictDataByIdsAsync(System.Int64[])">
+            <summary>
+              批量删除字典数据信息
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysDictTypeService">
+            <summary>
+              字典类型表 Service
+              author ruoyi
+              date   2023-09-04 17:49:59
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.SelectDictTypeAllAsync">
+            <summary>
+              所有字典类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.SelectDictDataByTypeAsync(System.String)">
+            <summary>
+              根据字典类型查询字典数据
+            </summary>
+            <param name="dictType">字典类型</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.GetAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 字典类型表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.CheckDictTypeUniqueAsync(RuoYi.Data.Dtos.SysDictTypeDto)">
+            <summary>
+              校验字典类型称是否唯一
+            </summary>
+            <param name="dict">字典类型</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.InsertDictTypeAsync(RuoYi.Data.Dtos.SysDictTypeDto)">
+            <summary>
+              新增保存字典类型信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.UpdateDictTypeAsync(RuoYi.Data.Dtos.SysDictTypeDto)">
+            <summary>
+              修改保存字典类型信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.DeleteDictTypeByIdsAsync(System.Int64[])">
+            <summary>
+              批量删除字典类型信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.ResetDictCache">
+            <summary>
+              重置字典缓存数据
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.ClearDictCache">
+            <summary>
+              清空字典缓存数据
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysDictTypeService.LoadingDictCache">
+            <summary>
+              加载字典缓存数据
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysGmService.PostData">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysGmService.Decrypt(System.String,System.String)">
+            <summary>
+            SM2 私钥解密
+            </summary>
+            <param name="message"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.System.Services.SysLogininforService">
+            <summary>
+              系统访问记录 Service
+              author ruoyi
+              date   2023-08-22 10:07:36
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysLogininforService.GetDtoAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 系统访问记录 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysLogininforService.AddAsync(System.String,System.String,System.String)">
+            <summary>
+              记录登录信息
+            </summary>
+            <param name="username">用户名</param>
+            <param name="status">状态</param>
+            <param name="message">消息</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysLoginService.LoginAsync(System.String,System.String,System.String,System.String)">
+            <summary>
+              登录验证
+            </summary>
+            <param name="username">用户名</param>
+            <param name="password">密码</param>
+            <param name="code">验证码</param>
+            <param name="uuid">唯一标识</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysLoginService.ValidateCaptcha(System.String,System.String,System.String)">
+            <summary>
+              校验验证码
+            </summary>
+            <param name="username">用户名</param>
+            <param name="code">验证码</param>
+            <param name="uuid">唯一标识</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysLoginService.LoginPreCheck(System.String,System.String)">
+            <summary>
+              登录前置校验
+            </summary>
+            <param name="username">用户名</param>
+            <param name="password">用户密码</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysLoginService.RecordLoginInfoAsync(System.Int64)">
+            <summary>
+              记录登录信息
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysMenuService">
+            <summary>
+              菜单权限表 Service
+              author ruoyi
+              date   2023-08-21 14:40:23
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.SelectMenuListAsync(System.Int64)">
+            <summary>
+              根据用户查询系统菜单列表
+            </summary>
+            <param name="userId">用户ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.SelectMenuListAsync(RuoYi.Data.Dtos.SysMenuDto,System.Int64)">
+            <summary>
+              查询系统菜单列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.GetAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 菜单权限表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.SelectMenuPermsByUserId(System.Int64)">
+            <summary>
+              根据用户ID查询权限
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.SelectMenuPermsByRoleId(System.Int64)">
+            <summary>
+              根据角色ID查询权限
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.SelectMenuTreeByUserId(System.Int64)">
+            <summary>
+              根据用户ID查询菜单
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.SelectMenuListByRoleId(System.Int64)">
+            <summary>
+              根据角色ID查询菜单树信息
+            </summary>
+            <param name="roleId">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.BuildMenus(System.Collections.Generic.List{RuoYi.Data.Entities.SysMenu})">
+            <summary>
+              构建前端路由所需要的菜单
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.BuildMenuTree(System.Collections.Generic.List{RuoYi.Data.Entities.SysMenu})">
+            <summary>
+              构建前端所需要树结构
+            </summary>
+            <param name="menus">菜单列表</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.BuildMenuTreeSelect(System.Collections.Generic.List{RuoYi.Data.Entities.SysMenu})">
+            <summary>
+              构建前端所需要下拉树结构
+            </summary>
+            <param name="menus">菜单列表</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.SelectMenuById(System.Int64)">
+            <summary>
+              根据菜单ID查询信息
+            </summary>
+            <param name="menuId">菜单ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.HasChildByMenuId(System.Int64)">
+            <summary>
+              是否存在菜单子节点
+            </summary>
+            <param name="menuId">菜单ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.CheckMenuExistRole(System.Int64)">
+            <summary>
+              查询菜单使用数量
+            </summary>
+            <param name="menuId">菜单ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.CheckMenuNameUnique(RuoYi.Data.Dtos.SysMenuDto)">
+            <summary>
+              校验菜单名称是否唯一
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.GetRouteName(RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              获取路由名称
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.GetRouterPath(RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              获取路由地址
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.GetComponent(RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              获取组件信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.IsMenuFrame(RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              是否为菜单内部跳转
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.IsInnerLink(RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              是否为内链组件
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.IsParentView(RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              是否为parent_view组件
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.GetChildPerms(System.Collections.Generic.List{RuoYi.Data.Entities.SysMenu},System.Int32)">
+            <summary>
+              根据父节点的ID获取所有子节点
+            </summary>
+            <param name="list">分类表</param>
+            <param name="parentId">传入的父节点ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.RecursionFn(System.Collections.Generic.List{RuoYi.Data.Entities.SysMenu},RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              递归列表
+            </summary>
+            <param name="list">分类表</param>
+            <param name="t">子节点</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.GetChildList(System.Collections.Generic.List{RuoYi.Data.Entities.SysMenu},RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              得到子节点列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysMenuService.HasChild(System.Collections.Generic.List{RuoYi.Data.Entities.SysMenu},RuoYi.Data.Entities.SysMenu)">
+            <summary>
+              判断是否有子节点
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysNoticeService">
+            <summary>
+              通知公告表 Service
+              author ruoyi
+              date   2023-09-04 17:50:00
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysNoticeService.GetAsync(System.Int32)">
+            <summary>
+              查询 通知公告表 详情
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysOperLogService">
+            <summary>
+              操作日志记录 Service
+              author ruoyi
+              date   2023-09-28 12:38:39
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysOperLogService.GetAsync(System.Int64)">
+            <summary>
+              查询 操作日志记录 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysOperLogService.GetDtoAsync(System.Int64)">
+            <summary>
+              查询 操作日志记录 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysOperLogService.Clean">
+            <summary>
+              清表
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysPasswordService">
+            <summary>
+              登录密码方法
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPasswordService.GetCacheKey(System.String)">
+            <summary>
+              登录账户密码错误次数缓存键名
+            </summary>
+            <param name="username">用户名</param>
+            <returns>缓存键key</returns>
+        </member>
+        <member name="T:RuoYi.System.Services.SysPermissionService">
+            <summary>
+              用户权限处理
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPermissionService.GetRolePermissionAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              获取角色数据权限
+            </summary>
+            <param name="user">用户信息</param>
+            <returns>角色权限信息</returns>
+        </member>
+        <member name="T:RuoYi.System.Services.SysPostService">
+            <summary>
+              岗位信息表 Service
+              author ruoyi
+              date   2023-08-30 13:21:36
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.SelectPostAllAsync">
+            <summary>
+              查询所有岗位
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.GetAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 岗位信息表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.GetDtoAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 岗位信息表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.GetPostsByUserName(System.String)">
+            <summary>
+              查询用户所属岗位组
+            </summary>
+            <param name="userName">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.CheckPostNameUniqueAsync(RuoYi.Data.Dtos.SysPostDto)">
+            <summary>
+              校验岗位名称是否唯一
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.CheckPostCodeUniqueAsync(RuoYi.Data.Dtos.SysPostDto)">
+            <summary>
+              校验岗位编码是否唯一
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.DeletePostByIdsAsync(System.Int64[])">
+            <summary>
+              批量删除岗位信息
+            </summary>
+            <param name="postIds">需要删除的岗位ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysPostService.CountUserPostByIdAsync(System.Int64)">
+            <summary>
+              通过岗位ID查询岗位使用数量
+            </summary>
+            <param name="postId">岗位ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRegisterService.RegisterAsync(RuoYi.Data.Models.RegisterBody)">
+            <summary>
+              注册
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRegisterService.ValidateCaptcha(System.String,System.String)">
+            <summary>
+              校验验证码
+            </summary>
+            <param name="code">验证码</param>
+            <param name="uuid">唯一标识</param>
+        </member>
+        <member name="T:RuoYi.System.Services.SysRoleDeptService">
+            <summary>
+              角色和部门关联表 Service
+              author ruoyi.net
+              date   2023-08-23 09:43:52
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleDeptService.GetAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 角色和部门关联表 详情
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysRoleMenuService">
+            <summary>
+              角色和菜单关联表 Service
+              author ruoyi.net
+              date   2023-08-23 09:43:53
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleMenuService.GetAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 角色和菜单关联表 详情
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysRoleService">
+            <summary>
+              角色信息表 Service
+              author ruoyi
+              date   2023-08-21 14:40:22
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.GetPagedRoleListAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              分页查询用户列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.GetDtoAsync(System.Int64)">
+            <summary>
+              查询 角色信息表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.CheckRoleNameUniqueAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              校验角色名称是否唯一
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.CheckRoleKeyUniqueAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              校验角色权限是否唯一
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.CheckRoleAllowed(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              校验角色是否允许操作
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.CheckRoleDataScopeAsync(System.Int64)">
+            <summary>
+              校验角色是否有数据权限
+            </summary>
+            <param name="roleId">角色id</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.InsertRoleAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              新增保存角色信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.InsertRoleMenuAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              新增角色菜单信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.UpdateRoleStatusAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              修改角色状态
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.AuthDataScopeAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              修改数据权限信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.InsertRoleDeptAsync(RuoYi.Data.Dtos.SysRoleDto)">
+            <summary>
+              新增角色部门信息(数据权限)
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.DeleteAuthUserAsync(RuoYi.Data.Dtos.SysUserRoleDto)">
+            <summary>
+              取消授权用户角色
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.DeleteAuthUserBathAsync(RuoYi.Data.Dtos.SysUserRoleDto)">
+            <summary>
+              批量取消授权用户角色
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysRoleService.InsertAuthUsersAsync(System.Int64,System.Collections.Generic.List{System.Int64})">
+            <summary>
+              批量选择授权用户角色
+            </summary>
+            <param name="roleId">角色ID</param>
+            <param name="userIds">需要授权的用户数据ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.System.Services.SysUserOnlineService">
+            <summary>
+              在线用户 服务层处理
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserOnlineService.GetOnlineByIpaddr(System.String,RuoYi.Data.Models.LoginUser)">
+            <summary>
+              通过登录地址查询信息
+            </summary>
+            <param name="ipaddr">登录地址</param>
+            <param name="user">用户信息</param>
+            <returns>在线用户信息</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserOnlineService.GetOnlineByUserName(System.String,RuoYi.Data.Models.LoginUser)">
+            <summary>
+              通过用户名称查询信息
+            </summary>
+            <param name="userName">用户名称</param>
+            <param name="user">用户信息</param>
+            <returns>在线用户信息</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserOnlineService.GetOnlineByInfo(System.String,System.String,RuoYi.Data.Models.LoginUser)">
+            <summary>
+              通过登录地址/用户名称查询信息
+            </summary>
+            <param name="ipaddr">登录地址</param>
+            <param name="userName">用户名称</param>
+            <param name="user">用户信息</param>
+            <returns>在线用户信息</returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserOnlineService.LoginUserToUserOnline(RuoYi.Data.Models.LoginUser)">
+            <summary>
+              设置在线用户信息
+            </summary>
+            <param name="user">用户信息</param>
+            <returns>在线用户</returns>
+        </member>
+        <member name="T:RuoYi.System.Services.SysUserPostService">
+            <summary>
+              用户与岗位关联表 Service
+              author ruoyi.net
+              date   2023-08-23 09:43:50
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserPostService.GetAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 用户与岗位关联表 详情
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.SysUserService">
+            <summary>
+              用户信息表 Service
+              author ruoyi
+              date   2023-08-21 14:40:20
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetDtoAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 用户信息表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetDtoByUsernameAsync(System.String)">
+            <summary>
+              查询 用户
+            </summary>
+            <param name="username">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetByUsernameAsync(System.String)">
+            <summary>
+              查询 用户
+            </summary>
+            <param name="username">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetByPhoneAsync(System.String)">
+            <summary>
+              查询 用户
+            </summary>
+            <param name="phoneNumber">手机号</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetByEmailAsync(System.String)">
+            <summary>
+              查询 用户
+            </summary>
+            <param name="email">email</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetUserListAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              查询用户列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetPagedUserListAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              分页查询用户列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetPagedAllocatedListAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              根据条件分页查询已分配用户角色列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.GetPagedUnallocatedListAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              根据条件分页查询未分配用户角色列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.SelectUserRoleGroup(System.String)">
+            <summary>
+              查询用户所属角色组
+            </summary>
+            <param name="userName">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.SelectUserPostGroup(System.String)">
+            <summary>
+              查询用户所属岗位组
+            </summary>
+            <param name="userName">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.CheckUserNameUniqueAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              校验用户名称是否唯一
+            </summary>
+            <param name="user">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.CheckPhoneUniqueAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              校验手机号码是否唯一
+            </summary>
+            <param name="user">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.CheckEmailUniqueAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              校验email是否唯一
+            </summary>
+            <param name="user">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.CheckUserAllowed(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              校验用户是否允许操作
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.CheckUserDataScope(System.Nullable{System.Int64})">
+            <summary>
+              校验用户是否有数据权限
+            </summary>
+            <param name="userId">用户id</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.InsertUser(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              新增保存用户信息
+            </summary>
+            <param name="user">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.RegisterUserAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              注册用户信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.UpdateUser(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              修改保存用户信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.InsertUserAuth(System.Int64,System.Collections.Generic.List{System.Int64})">
+            <summary>
+              用户授权角色
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="roleIds">角色组</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.UpdateUserStatus(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              修改用户状态
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.UpdateUserProfileAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              修改用户基本信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.UpdateUserLoginInfoAsync(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              更新登录信息: 登录IP/登录时间
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.InsertUserRole(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              新增用户角色信息
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.UpdateUserAvatar(System.String,System.String)">
+            <summary>
+              修改用户头像
+            </summary>
+            <param name="userName">用户名</param>
+            <param name="avatar">头像地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.ResetPwd(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              重置用户密码
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.ResetUserPwdAsync(System.String,System.String)">
+            <summary>
+              重置用户密码
+            </summary>
+            <param name="userName">用户名</param>
+            <param name="password">加密的密码</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.InsertUserRole(System.Int64,System.Collections.Generic.List{System.Int64})">
+            <summary>
+              新增用户角色信息
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="roleIds">角色组</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.InsertUserPost(RuoYi.Data.Dtos.SysUserDto)">
+            <summary>
+              新增用户岗位信息
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.DeleteUserByIdAsync(System.Int64)">
+            <summary>
+              通过用户ID删除用户
+            </summary>
+            <param name="userId">用户ID</param>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.DeleteUserByIdsAsync(System.Collections.Generic.List{System.Int64})">
+            <summary>
+              批量删除用户信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.SysUserService.ImportDtosAsync(System.Collections.Generic.List{RuoYi.Data.Dtos.SysUserDto},System.Boolean,System.String)">
+            <summary>
+              导入
+            </summary>
+            <param name="dtos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.TokenService.GetLoginUser(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+              获取用户身份信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.TokenService.SetLoginUser(RuoYi.Data.Models.LoginUser)">
+            <summary>
+              设置用户身份信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.TokenService.CreateToken(RuoYi.Data.Models.LoginUser)">
+            <summary>
+              创建令牌
+            </summary>
+            <param name="loginUser">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.TokenService.VerifyToken(RuoYi.Data.Models.LoginUser)">
+            <summary>
+              验证令牌有效期，相差不足20分钟，自动刷新缓存
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.TokenService.RefreshToken(RuoYi.Data.Models.LoginUser)">
+            <summary>
+              刷新令牌有效期
+            </summary>
+            <param name="loginUser">用户信息</param>
+        </member>
+        <member name="M:RuoYi.System.Services.TokenService.SetUserAgent(RuoYi.Data.Models.LoginUser)">
+            <summary>
+              设置用户代理信息
+            </summary>
+            <param name="loginUser">用户信息</param>
+        </member>
+        <member name="T:RuoYi.System.Slave.Repositories.SysUserRepository">
+            <summary>
+              用户信息表 Repository
+              author ruoyi
+              date   2023-08-21 14:40:20
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Slave.Services.SysUserService">
+            <summary>
+              用户信息表 Service
+              author ruoyi
+              date   2023-08-21 14:40:20
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Slave.Services.SysUserService.GetAsync(System.Nullable{System.Int64})">
+            <summary>
+              查询 用户信息表 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Slave.Services.SysUserService.GetByUsernameAsync(System.String)">
+            <summary>
+              查询 用户
+            </summary>
+            <param name="username">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.Admin.SysLoginController">
+            <summary>
+              登录验证
+            </summary>
+        </member>
+        <member name="M:RuoYi.Admin.SysLoginController.Login(RuoYi.Data.Models.LoginBody)">
+            <summary>
+              登录验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.Admin.SysLoginController.Logout">
+            <summary>
+              退出
+            </summary>
+        </member>
+        <member name="M:RuoYi.Admin.SysLoginController.GetInfo">
+            <summary>
+              获取用户信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.Admin.SysLoginController.GetRouters">
+            <summary>
+              获取路由信息
+            </summary>
+        </member>
+    </members>
+</doc>
