@@ -46,11 +46,11 @@
 
 2. 新增一个发布，并上传已经生成好的 html 文件压缩包（推荐使用 axure）
 
-   ![](docs/4.png)
+   ![](docs/mockup1.2-2.png)
 
 3. 点击立即访问，即可访问原型
 
-   ![](docs/5.png)
+   ![](docs/mockup1.2-1.png)
 
 4. 对方直接打开，即可查看原型文件。
 
@@ -82,7 +82,19 @@
  
 
 
+
+##  下载获取
+1. 克隆本仓库，使用depoy文件夹的文件。
+
+2.  使用release 下载最新版本。
+
+
+3.  进去官方网站，   [知鱼项目管理系统](https://www.zhiyupm.com/)下载栏目，下载最新版本。
+
+
 ## 部署方式
+
+
 
 ### 1. 单独部署
 
@@ -117,7 +129,12 @@ linux下部署请参考     [linux下部署](https://www.zhiyupm.com/wiki/single
 
 6. 登录使用
 
+部署请参考      [docker部署](https://www.zhiyupm.com/wiki/docker)
+
 默认用户 admin /12345678
+
+
+其他问题请参考    [常见问题](https://www.zhiyupm.com/wiki)
 
 ## 其他说明
 

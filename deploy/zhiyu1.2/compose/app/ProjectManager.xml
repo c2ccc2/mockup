@@ -1,0 +1,1442 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectManager</name>
+    </assembly>
+    <members>
+        <member name="T:RuoYi.System.Controllers.ArticleController">
+            <summary>
+            内容管理
+             author ruoyi.net
+             date   2025-06-07 22:30:43
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.#ctor(Microsoft.Extensions.Logging.ILogger{RuoYi.System.Controllers.ArticleController},RuoYi.System.Services.ArticleService)">
+            <summary>
+            内容管理
+             author ruoyi.net
+             date   2025-06-07 22:30:43
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.GetArticlePagedList(RuoYi.System.Data.Dtos.ArticleSearchDto)">
+            <summary>
+            查询内容管理列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.Get(System.Int64)">
+            <summary>
+            获取 内容管理 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.Add(RuoYi.System.Data.Dtos.ArticleDto)">
+            <summary>
+            新增 内容管理
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.Edit(RuoYi.System.Data.Dtos.ArticleDto)">
+            <summary>
+            修改 内容管理
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.Remove(System.String)">
+            <summary>
+            删除 内容管理
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.Import(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入 内容管理
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Controllers.ArticleController.Export(RuoYi.System.Data.Dtos.ArticleDto)">
+            <summary>
+            导出 内容管理
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Data.Dtos.ArticleDto">
+            <summary>
+             内容管理 对象 article
+             author ruoyi.net
+             date   2025-06-07 22:30:43
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Cid">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Title">
+            <summary>
+            文章标题
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Content">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.AuthorName">
+            <summary>
+            作者名
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Status">
+            <summary>
+            文章状态 1、发布 2、草稿
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.EditorType">
+            <summary>
+            编辑器类型markdown,html
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Tags">
+            <summary>
+            文章标签
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Hits">
+            <summary>
+            点击量
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.CategoryId">
+            <summary>
+            目录id
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.CoverUrl">
+            <summary>
+            封面地址
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.IsPublic">
+            <summary>
+            是否公开 1、公开 0、不公开
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Istop">
+            <summary>
+            是否置顶
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.ArticleType">
+            <summary>
+            内容类型0、普通文章 1、项目的文章
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.AbstractText">
+            <summary>
+            摘要
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.CategoryNav">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.CommentNum">
+            <summary>
+            评论数
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.PraiseUm">
+            <summary>
+            点赞数
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.UserIp">
+            <summary>
+            用户IP
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.Location">
+            <summary>
+            地理位置
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.TopicId">
+            <summary>
+            话题ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.CommentSwitch">
+            <summary>
+            评论开关
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleDto.AuditStatus">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Cid">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Title">
+            <summary>
+            文章标题
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Content">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.AuthorName">
+            <summary>
+            作者名
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Status">
+            <summary>
+            文章状态 1、发布 2、草稿
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.EditorType">
+            <summary>
+            编辑器类型markdown,html
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Tags">
+            <summary>
+            文章标签
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Hits">
+            <summary>
+            点击量
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.CategoryId">
+            <summary>
+            目录id
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.CoverUrl">
+            <summary>
+            封面地址
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.IsPublic">
+            <summary>
+            是否公开 1、公开 0、不公开
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Istop">
+            <summary>
+            是否置顶
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.ArticleType">
+            <summary>
+            内容类型0、普通文章 1、项目的文章
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.AbstractText">
+            <summary>
+            摘要
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.CategoryNav">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.CommentNum">
+            <summary>
+            评论数
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.PraiseUm">
+            <summary>
+            点赞数
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.UserIp">
+            <summary>
+            用户IP
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.Location">
+            <summary>
+            地理位置
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.TopicId">
+            <summary>
+            话题ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.CommentSwitch">
+            <summary>
+            评论开关
+            </summary>
+        </member>
+        <member name="P:RuoYi.System.Data.Dtos.ArticleSearchDto.AuditStatus">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="T:RuoYi.System.Services.ArticleService">
+            <summary>
+             内容管理 Service
+             author ruoyi.net
+             date   2025-06-07 22:30:43
+            </summary>
+        </member>
+        <member name="M:RuoYi.System.Services.ArticleService.GetCustomPagedListAsync(RuoYi.System.Data.Dtos.ArticleSearchDto)">
+            <summary>
+            查询文章列表
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.System.Services.ArticleService.UpdateAsync(RuoYi.System.Data.Dtos.ArticleDto)">
+             <summary>
+            
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Controllers.ProjectBaseController">
+            <summary>
+            项目表
+             author ruoyi.net
+             date   2025-05-28 13:26:45
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.GetCustomPagedListAsync(RuoYi.ProjectManager.Data.Dtos.ProjectBaseSearchDto)">
+            <summary>
+            查询项目表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.MyCreateProject(RuoYi.ProjectManager.Data.Dtos.ProjectBaseSearchDto)">
+            <summary>
+            查询自己创建的项目表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.Get(System.Int64)">
+            <summary>
+            获取 项目表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.Add(RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto)">
+            <summary>
+            新增 项目表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.Edit(RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto)">
+            <summary>
+            修改 项目表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.Remove(System.String)">
+            <summary>
+            删除 项目表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.Import(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入 项目表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectBaseController.Export(RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto)">
+            <summary>
+            导出 项目表
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Controllers.ProjectFileController">
+            <summary>
+            原型文件
+             author ruoyi.net
+             date   2025-06-03 16:30:58
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileController.#ctor(Microsoft.Extensions.Logging.ILogger{RuoYi.ProjectManager.Controllers.ProjectFileController},RuoYi.ProjectManager.Services.ProjectFileService)">
+            <summary>
+            原型文件
+             author ruoyi.net
+             date   2025-06-03 16:30:58
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileController.GetProjectFilePagedList(RuoYi.ProjectManager.Data.Dtos.ProjectFileSearchDto)">
+            <summary>
+            查询原型文件列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileController.Get(System.Int64)">
+            <summary>
+            获取 原型文件 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileController.Add(ProjectManager.Data.Dtos.ProjectFileSimpleAdd)">
+            <summary>
+            添加原型 不包含文件
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileController.AddFileToProjectFile(ProjectManager.Data.Dtos.ProjectFileAddFileDto,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            新增 原型文件
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileController.UpdateName(ProjectManager.Data.Dtos.ProjectFileUpdateNameDto)">
+            <summary>
+            修改 原型文件的名字
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileController.Remove(System.String)">
+            <summary>
+            删除 原型文件
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController">
+            <summary>
+            项目原型历史
+             author ruoyi.net
+             date   2025-06-03 16:31:05
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController.#ctor(Microsoft.Extensions.Logging.ILogger{RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController},RuoYi.ProjectManager.Services.ProjectFileUploadHistoryService)">
+            <summary>
+            项目原型历史
+             author ruoyi.net
+             date   2025-06-03 16:31:05
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController.GetCustomPagedListAsync(RuoYi.ProjectManager.Data.Dtos.ProjectFileUploadHistorySearchDto)">
+            <summary>
+            自定义查询项目原型历史列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController.Get(System.Int64)">
+            <summary>
+            获取 项目原型历史 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController.GetLastRecordByProjectId(System.Int64)">
+             <summary>
+            获取某个项目原型历史记录的最新一条
+             </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController.Edit(ProjectManager.Data.Dtos.ProjectFileHistoryDto)">
+            <summary>
+            修改 项目原型历史
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectFileUploadHistoryController.Remove(System.String)">
+            <summary>
+            删除 项目原型历史
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Controllers.ProjectUserController">
+            <summary>
+            项目成员表
+             author ruoyi.net
+             date   2025-05-31 17:59:36
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.#ctor(Microsoft.Extensions.Logging.ILogger{RuoYi.ProjectManager.Controllers.ProjectUserController},RuoYi.ProjectManager.Services.ProjectUserService)">
+            <summary>
+            项目成员表
+             author ruoyi.net
+             date   2025-05-31 17:59:36
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.GetProjectUserPagedList(RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto)">
+            <summary>
+            查询项目成员表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.Getmyprojectlist(RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto)">
+            <summary>
+            查询我参加的项目
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.GetUserOfProjectPagedListAsync(RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto)">
+            <summary>
+            查询项目的成员表列表  selecttype-join 已加入  unjoin 未加入
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.GetAllUserOfProjectPagedListAsync(RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto)">
+            <summary>
+            查询项目的成员表列表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.Get(System.Int64)">
+            <summary>
+            获取 项目成员表 详细信息
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.Add(RuoYi.ProjectManager.Data.Dtos.ProjectUserDto)">
+            <summary>
+            新增 项目成员表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.Edit(RuoYi.ProjectManager.Data.Dtos.ProjectUserDto)">
+            <summary>
+            修改 项目成员表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.Remove(ProjectManager.Data.Dtos.ProjectUserDeleteDto)">
+            <summary>
+            删除 项目成员表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.Import(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入 项目成员表
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Controllers.ProjectUserController.Export(RuoYi.ProjectManager.Data.Dtos.ProjectUserDto)">
+            <summary>
+            导出 项目成员表
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto">
+            <summary>
+             项目 对象 project_base
+             author ruoyi.net
+             date   2025-05-29 23:40:06
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto.ProjectName">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto.ProjectDescription">
+            <summary>
+            项目描述
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseSearchDto.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseSearchDto.ProjectName">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseSearchDto.ProjectDescription">
+            <summary>
+            项目描述
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseSearchDto.ProjectState">
+            <summary>
+            项目状态
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectBaseSearchDto.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Data.Dtos.ProjectFileDto">
+            <summary>
+             原型文件 对象 project_file
+             author ruoyi.net
+             date   2025-06-03 16:30:58
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileDto.ProjectFileId">
+            <summary>
+            项目文件ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileDto.UploadDescription">
+            <summary>
+            最新上传的说明
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileSearchDto.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileSearchDto.UploadDescription">
+            <summary>
+            最新上传的说明
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Data.Dtos.ProjectFileUploadHistoryDto">
+            <summary>
+             项目原型历史 对象 project_file_upload_history
+             author ruoyi.net
+             date   2025-06-03 16:31:05
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileUploadHistoryDto.HistoryId">
+            <summary>
+            项目文件上传历史ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileUploadHistoryDto.UploadDescription">
+            <summary>
+            最新上传的说明
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:RuoYi.ProjectManager.Data.Dtos.ProjectFileUploadHistorySearchDto.ProjectFileId" -->
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileUploadHistorySearchDto.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectFileUploadHistorySearchDto.UploadDescription">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Data.Dtos.ProjectUserDto">
+            <summary>
+             项目成员表 对象 project_user
+             author ruoyi.net
+             date   2025-05-31 17:59:36
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserDto.ProjectUserId">
+            <summary>
+            项目成员表ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserDto.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserDto.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto.ProjectUserId">
+            <summary>
+            项目成员表ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto.SelectType">
+            <summary>
+            选择的类型  all为全部,join 为已加入, unjoin 为未加入
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Data.Entities.ProjectBase">
+            <summary>
+             项目表 对象 project_base
+             author ruoyi.net
+             date   2025-05-27 15:22:49
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectBase.ProjectId">
+            <summary>
+            项目ID (project_id)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectBase.ProjectName">
+            <summary>
+            项目名称 (project_name)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectBase.ProjectDescription">
+            <summary>
+            项目描述 (project_description)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectBase.CreateBy">
+            <summary>
+            创建人 (create_by)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectBase.CreateTime">
+            <summary>
+            创建时间 (create_time)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectBase.UpdateBy">
+            <summary>
+            更新人 (update_by)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectBase.UpdateTime">
+            <summary>
+            更新时间 (update_time)
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Data.Entities.ProjectUser">
+            <summary>
+             项目成员表 对象 project_user
+             author ruoyi.net
+             date   2025-05-31 17:59:36
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectUser.ProjectUserId">
+            <summary>
+            项目成员表ID (project_user_id)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectUser.ProjectId">
+            <summary>
+            项目ID (project_id)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectUser.UserId">
+            <summary>
+            用户ID (user_id)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectUser.CreateBy">
+            <summary>
+            创建人 (create_by)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectUser.CreateTime">
+            <summary>
+            创建时间 (create_time)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectUser.UpdateBy">
+            <summary>
+            更新人 (update_by)
+            </summary>
+        </member>
+        <member name="P:RuoYi.ProjectManager.Data.Entities.ProjectUser.UpdateTime">
+            <summary>
+            更新时间 (update_time)
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Repositories.ProjectBaseRepository">
+            <summary>
+             项目 Repository
+             author ruoyi.net
+             date   2025-05-28 17:19:01
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Repositories.ProjectBaseRepository.Queryable(RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto)">
+            <summary>
+            构造条件查询器
+            </summary>
+            <param name="dto">domain</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Repositories.ProjectBaseRepository.DtoQueryable(RuoYi.ProjectManager.Data.Dtos.ProjectBaseDto)">
+            <summary>
+            构造条件查询器
+            </summary>
+            <param name="dto">domain</param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Repositories.ProjectUserRepository">
+            <summary>
+             项目成员表 Repository
+             author ruoyi.net
+             date   2025-05-31 17:59:36
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Repositories.ProjectUserRepository.Queryable(RuoYi.ProjectManager.Data.Dtos.ProjectUserDto)">
+            <summary>
+            构造条件查询器
+            </summary>
+            <param name="dto">domain</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Repositories.ProjectUserRepository.DtoQueryable(RuoYi.ProjectManager.Data.Dtos.ProjectUserDto)">
+            <summary>
+            构造条件查询器
+            </summary>
+            <param name="dto">domain</param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Services.ProjectBaseService">
+            <summary>
+             项目 Service
+             author ruoyi.net
+             date   2025-05-29 23:40:06
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectBaseService.GetAsync(System.Int64)">
+            <summary>
+            查询 项目 详情
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectBaseService.GetDtoAsync(System.Int64)">
+            <summary>
+            查询 项目 详情
+            </summary>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Services.ProjectFileService">
+            <summary>
+             原型文件 Service
+             author ruoyi.net
+             date   2025-06-03 16:30:58
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectFileService.Add(ProjectManager.Data.Dtos.ProjectFileSimpleAdd)">
+            <summary>
+            添加原型 不包含文件
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectFileService.UpdateName(ProjectManager.Data.Dtos.ProjectFileUpdateNameDto)">
+            <summary>
+            更新原型描述
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Services.ProjectFileUploadHistoryService">
+            <summary>
+             项目原型历史 Service
+             author ruoyi.net
+             date   2025-06-03 16:31:05
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectFileUploadHistoryService.GetLastRecordByProjectIdAsync(System.Int64)">
+            <summary>
+            项目原型历史记录的最新记录
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:RuoYi.ProjectManager.Services.ProjectUserService">
+            <summary>
+             项目成员表 Service
+             author ruoyi.net
+             date   2025-05-31 17:59:36
+            </summary>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectUserService.GetAllUserOfProjectPagedListAsync(RuoYi.ProjectManager.Data.Dtos.ProjectUserSearchDto)">
+            <summary>
+            获取项目的成员列表  返回的projectid 为null 则没有设置,大于0则设置了
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectUserService.GetAsync(System.Int64)">
+             <summary>
+             查询 项目成员表 详情
+             </summary>
+            
+        </member>
+        <member name="M:RuoYi.ProjectManager.Services.ProjectUserService.GetDtoAsync(System.Int64)">
+            <summary>
+            查询 项目成员表 详情
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Controllers.IndexController.wwwroot">
+            <summary>
+            获取 项目原型历史 详细信息
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Controllers.IndexController.Get">
+            <summary>
+            获取 项目原型历史 详细信息
+            </summary>
+        </member>
+        <member name="T:ProjectManager.Controllers.ManagerConfigController">
+            <summary>
+              角色信息表
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Controllers.ManagerConfigController.#ctor(Microsoft.Extensions.Logging.ILogger{ProjectManager.Controllers.ManagerConfigController},ProjectManager.Services.ModuleConfigService)">
+            <summary>
+              角色信息表
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Controllers.ManagerConfigController.InitTableData">
+            <summary>
+              初始化表数据
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Controllers.ManagerConfigController.DropTable">
+            <summary>
+              删除表
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Controllers.ManagerConfigController.CreateTable">
+            <summary>
+              创建表
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Controllers.ManagerConfigController.DeleteTableData">
+            <summary>
+              删除表数据
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.IndexResult.UserStatistics">
+            <summary>
+            用户统计
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectFileAddFileDto.ProjectFileId">
+            <summary>
+            项目文件ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectFileAddFileDto.UploadDescription">
+            <summary>
+            最新上传的说明
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectFileHistoryDto.HistoryId">
+            <summary>
+            项目文件上传历史ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectFileHistoryDto.UploadDescription">
+            <summary>
+            最新上传的说明
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectFileSimpleAdd.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectFileSimpleAdd.UploadDescription">
+            <summary>
+            项目的说明
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectUserListDto.ProjectUserId">
+            <summary>
+            项目成员表ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectUserListDto.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectUserListDto.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectUserListDto.ProjectName">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectUserListDto.NickName">
+            <summary>
+            用户昵称
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectUserListDto.UserName">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Dtos.ProjectUserListDto.Phonenumber">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="T:ProjectManager.Data.Entities.Article">
+            <summary>
+            文章表
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.Cid">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.Title">
+            <summary>
+            文章标题
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.Content">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.AuthorName">
+            <summary>
+            作者名
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.Status">
+            <summary>
+            文章状态 1、发布 2、草稿
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.EditorType">
+            <summary>
+            编辑器类型 markdown,html
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.Tags">
+            <summary>
+            文章标签eg：Net5,java
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.Hits">
+            <summary>
+            点击量
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.CategoryId">
+            <summary>
+            目录id
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.CoverUrl">
+            <summary>
+            封面地址
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.IsPublic">
+            <summary>
+            是否公开 1、公开 0、不公开
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.IsTop">
+            <summary>
+            是否置顶
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.ArticleType">
+            <summary>
+            0、文章 1、随笔 2、动态
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.AbstractText">
+            <summary>
+            摘要
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.CategoryNav">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.CommentNum">
+            <summary>
+            评论数
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.PraiseNum">
+            <summary>
+            点赞数
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.UserIP">
+            <summary>
+            用户IP
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.Location">
+            <summary>
+            地理位置
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.TopicId">
+            <summary>
+            话题ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.CommentSwitch">
+            <summary>
+            评论开关 0、所有人可评论 1、仅粉丝 2、仅自己
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.Article.AuditStatus">
+            <summary>
+            审核状态 0、待审核 1、通过 2、拒绝
+            </summary>
+        </member>
+        <member name="T:ProjectManager.Data.Entities.ProjectFile">
+            <summary>
+            项目文件表
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFile.ProjectFileId">
+            <summary>
+            项目文件ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFile.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFile.FileName">
+            <summary>
+            项目文件名称
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFile.ProjectFileGuid">
+            <summary>
+            项目文件唯一id
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFile.FilePath">
+            <summary>
+            项目文件路径
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFile.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFile.UploadDescription">
+            <summary>
+            上传说明
+            </summary>
+        </member>
+        <member name="T:ProjectManager.Data.Entities.ProjectFileUploadHistory">
+            <summary>
+            项目文件上传历史表
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFileUploadHistory.HistoryId">
+            <summary>
+            项目文件上传历史ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFileUploadHistory.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFileUploadHistory.FileName">
+            <summary>
+            项目文件名称
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFileUploadHistory.FilePath">
+            <summary>
+            项目文件路径
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFileUploadHistory.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:ProjectManager.Data.Entities.ProjectFileUploadHistory.UploadDescription">
+            <summary>
+            上传说明
+            </summary>
+        </member>
+        <member name="T:ProjectManager.DbContext`1">
+            <summary>
+            读取配置文件
+            </summary>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetDataTable(System.String,System.Object)">
+            <summary>
+            返回datatable
+            </summary>
+            <param name="sql"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.ExecuteCommand(System.String,System.Collections.Generic.List{SqlSugar.SugarParameter})">
+            <summary>
+            返回首行首列
+            </summary>
+            <param name="sql"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.ExecuteCommandReturnRowsCount(System.String,System.Collections.Generic.List{SqlSugar.SugarParameter})">
+            <summary>
+            返回受影响的行数
+            </summary>
+            <param name="sql"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetList(System.String,System.Collections.Generic.List{SqlSugar.SugarParameter})">
+            <summary>
+            返回列表
+            </summary>
+            <param name="sql"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetSingleAsync(System.String,System.Collections.Generic.List{SqlSugar.SugarParameter})">
+            <summary>
+            返回单条记录
+            </summary>
+            <param name="sql"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetDynamic(System.String,System.Collections.Generic.List{SqlSugar.SugarParameter})">
+            <summary>
+            返回动态对象
+            </summary>
+            <param name="sql"></param>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetList">
+            <summary>
+            获取所有
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据表达式查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetPageList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},SqlSugar.PageModel)">
+            <summary>
+            根据表达式查询分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetPageList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},SqlSugar.PageModel,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},SqlSugar.OrderByType)">
+            <summary>
+            根据表达式查询分页并排序
+            </summary>
+            <param name="whereExpression">it</param>
+            <param name="pageModel"></param>
+            <param name="orderByExpression">it=>it.id或者it=>new{it.id,it.name}</param>
+            <param name="orderByType">OrderByType.Desc</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetById(System.Int32)">
+            <summary>
+            根据主键查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.GetById(System.String)">
+            <summary>
+            根据主键查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.DeleteById(System.Int32)">
+            <summary>
+            根据主键删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.Delete(`0)">
+            <summary>
+            根据实体删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.DeleteByIds(System.Object[])">
+            <summary>
+            根据主键删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据表达式删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.Update(`0)">
+            <summary>
+            根据实体更新，实体需要有主键
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.Update(System.Collections.Generic.List{`0})">
+             <summary>
+            批量更新
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.Insert(`0)">
+            <summary>
+            插入
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.Insert(System.Collections.Generic.List{`0})">
+            <summary>
+            批量
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.InsertReturnInt(`0)">
+            <summary>
+            返回主键整形id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.ImportDtoBatchAsync(System.Collections.Generic.IEnumerable{`0},System.Int32)">
+            <summary>
+              批量导入, 默认每次1万条
+            </summary>
+        </member>
+        <member name="M:ProjectManager.DbContext`1.ImportDtoBatch(System.Collections.Generic.IEnumerable{`0},System.Int32)">
+            <summary>
+              批量导入, 默认每次1万条
+            </summary>
+        </member>
+        <member name="T:ProjectManager.ProjectManagerOptions.Option">
+            <summary>
+            配置项
+            </summary>
+        </member>
+        <member name="T:ProjectManager.Services.ModuleConfigService">
+            <summary>
+            模块数据库清理初始化服务
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Services.ModuleConfigService.#ctor(Microsoft.Extensions.Logging.ILogger{RuoYi.System.Services.SysMenuService},RuoYi.System.Repositories.SysMenuRepository)">
+            <summary>
+            模块数据库清理初始化服务
+            </summary>
+        </member>
+        <member name="M:ProjectManager.Services.ModuleConfigService.CreateTable">
+            <summary>
+            创建数据表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.Services.ModuleConfigService.InitTableData">
+            <summary>
+            初始化表数据 如需要插入非本模块表的数据，也在此添加，仅限于本系统的数据，例如字典表中本模块的数据。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.Services.ModuleConfigService.DeleteTableData">
+            <summary>
+            删除表数据  如需要清理非本模块表的数据，也在此清理，仅限于本系统的数据，例如字典表中本模块的数据。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.Services.ModuleConfigService.DropTable">
+            <summary>
+            删除数据表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.Services.ModuleConfigService.OtherInitConfig">
+            <summary>
+            其他配置初始化  如创建文件，任务或写入appsetting等。 尽量把本模块的配置写在以本模块命名的文件中。如：ProjectManager.appsettings.json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.Services.ModuleConfigService.OtherClearConfig">
+            <summary>
+            其他配置清理  如文件，任务或appsetting等。例如清理：ProjectManager.appsettings.json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.WebClient.ChickenSoupForTheSoulClient.GetData">
+            <summary>
+            励志心灵鸡汤
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.WebClient.Live07Client.GetTodayOfHistory">
+            <summary>
+            历史上的今天
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManager.WebClient.Live07Client.GetWords(System.Int32)">
+            <summary>
+            获取一句话
+            </summary>
+            <param name="infoType"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ProjectManager.WebClient.JsonRootDto.success">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.JsonRootDto.name">
+            <summary>
+            IT之家
+            </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.JsonRootDto.subtitle">
+            <summary>
+            最新资讯
+            </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.JsonRootDto.update_time">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.JsonRootDto.data">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.DataItem.title">
+            <summary>
+            3.45 万亿美元！英伟达超越微软重回全球市值第一
+            </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.DataItem.hot">
+            <summary>
+            今日 7:56
+            </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.DataItem.url">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.DataItem.mobil_url">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:ProjectManager.WebClient.DataItem.index">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,49 @@
+using System.Collections.Generic;
+using RuoYi.Data.Attributes;
+using RuoYi.Data.Dtos;
+
+namespace RuoYi.ProjectManager.Data.Dtos;
+
+
+    @{
+        var dto = Model.Table.IsTree() ? "TreeDto" : "BaseDto";
+    }
+    /// <summary>
+    ///  @Model.SubTable.FunctionName 对象 @Model.SubTableName
+    ///  author 王晓琦
+    ///  date   @Model.DateTime
+    /// </summary>
+
+    public  partial class @(Model.SubClassName)SearchDto :
+    {
+          public PageModel pageModel { get; set; }
+    }
+
+
+
+    public  partial class @(Model.SubClassName)Dto : @dto
+    {
+@{
+foreach (RuoYi.Data.Entities.GenTableColumn col in Model.SubTable.Columns)
+{
+    // 自增字段,前端回传允许为null
+    var pk = col.Is_Pk() ? "?" : "";
+    @if(!Model.Table.IsSuperColumn(col.NetField))
+    {
+        // 添加Excel特性描述
+        var colName=col.ColumnComment;
+        if (string.IsNullOrWhiteSpace(colName)){
+            colName=col.NetField;
+        }
+        // 字段属性
+        @:/// <summary>
+        @:/// @colName
+        @:/// </summary>
+        @:[Excel(Name = "@colName")]
+        @:public @col.NetType@pk @col.NetField { get; set; }
+        @:
+    }
+}
+}
+    }
+

@@ -1,0 +1,1 @@
+import{B as s,w as c,c as r,o as n}from"./index-CFxQbL7N.js";const a={class:"main"},p=s({name:"prototype"}),d=Object.assign(p,{props:{projectId:{type:String,required:!0}},setup(t){const o=t;return c(()=>o.projectId,e=>{console.log("项目ID变化:",e)},{immediate:!0}),(e,i)=>(n(),r("div",a," 111 "))}});export{d as default};
