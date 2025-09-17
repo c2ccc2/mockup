@@ -1,0 +1,1 @@
+import{D as e}from"./index-CR6ovanu.js";function o(r){return e({url:"/project/user/count?projectId="+r,method:"get"})}function u(r){return e({url:"/project/user/list?projectId="+r,method:"get"})}function c(r){return e({url:"/project/user/join",method:"post",data:r})}function s(r){return e({url:"/project/user/remove",method:"put",params:r})}export{c as a,o as c,s as d,u as l};

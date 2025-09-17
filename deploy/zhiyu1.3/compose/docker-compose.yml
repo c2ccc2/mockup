@@ -1,0 +1,86 @@
+#version: "3.8"
+services:
+  pm_db:
+    image: mysql:5.7
+    container_name: pm_db
+    command:
+      [
+        "mysqld",
+        "--innodb-buffer-pool-size=80M",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_ci",
+        "--default-time-zone=+8:00",
+        "--lower-case-table-names=1",
+      ]
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: fQFaucSnjWA13b
+      MYSQL_ROOT_HOST: "%"
+      TZ: "Asia/Shanghai"
+        #ports:
+        # - 13306:3306
+    volumes: # 挂载
+      - ./conf/mysql:/etc/mysql/conf.d
+      - ./data/mysql/:/var/lib/mysql
+      - ./logs/mysql/:/var/log/mysql
+      - ./conf/init.d:/docker-entrypoint-initdb.d
+      - /etc/localtime:/etc/localtime
+    privileged: true
+    networks:
+      - pmnet
+
+  pm_redis:
+    image: redis:latest
+    container_name: pm_redis
+    command: redis-server /etc/redis/redis.conf
+    ports:
+      - 16379:6379
+    volumes: # 挂载
+      - ./conf/redis/redis.conf:/etc/redis/redis.conf
+      - /etc/localtime:/etc/localtime
+    restart: always
+    privileged: true
+    networks:
+      - pmnet
+
+
+  pmapp:
+    image: cc2c/app-env:v1.0
+    container_name: pm_app
+    ports:
+      - 8080:8080
+    volumes: # 挂载上传文件
+      - ./data/uploads/:/usr/local/wysoft/uploads/
+      - ./logs/server/:/usr/local/wysoft/logs/
+      - ./conf/app/:/usr/local/wysoft/app/
+      - /etc/localtime:/etc/localtime
+    depends_on:
+      - pm_db
+      - pm_redis
+    restart: always
+    privileged: true
+    command: ["/usr/local/wysoft/app/wait-for-it.sh", "pm_db:3306", "--", "/usr/local/wysoft/app/start.sh"]
+    networks:
+      - pmnet
+
+  pm_nginx:
+    image: nginx:latest
+    container_name: pm_nginx
+    ports:
+      - 80:80  # 暴露端口
+    volumes: # 挂载
+      - ./conf/dist:/usr/share/nginx/html
+      - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - /etc/localtime:/etc/localtime
+    restart: always
+    privileged: true 
+    depends_on:
+      - pmapp
+    networks:
+      - pmnet
+      
+
+      
+networks:
+  pmnet:
+    driver: bridge
